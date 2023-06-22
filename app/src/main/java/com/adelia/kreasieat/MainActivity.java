@@ -35,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        if (Utilities.checkValue(MainActivity.this, "xUsername")) {
-            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-            startActivity(intent);
-            finish();
-        }
+//        if (Utilities.checkValue(MainActivity.this, "xUsername")) {
+//            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+//            startActivity(intent);
+//            finish();
+//        }
 
         unggahViewAdapter = new UnggahViewAdapter();
         binding.rvUnggah.setLayoutManager(new LinearLayoutManager(this));
