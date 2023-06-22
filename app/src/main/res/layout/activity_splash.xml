@@ -10,15 +10,14 @@
     <ImageView
         android:id="@+id/iv_logo"
         android:layout_width="match_parent"
-        android:layout_height="1000dp"
+        android:layout_height="wrap_content"
         android:src="@drawable/kreasieat"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintDimensionRatio="H, 2:1"
-        android:layout_marginHorizontal="48dp"
-        app:tint="@color/white"/>
+        android:layout_marginHorizontal="48dp"/>
 
     <TextView
         android:id="@+id/tv_title"
