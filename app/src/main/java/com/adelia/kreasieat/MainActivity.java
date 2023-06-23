@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                             builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
-                                    deleteUnggah(id);
+                                    deleteUnggah("649412ad596e58c436bc2f7c");
                                 }
                             });
                             builder.setNegativeButton("No", new DialogInterface.OnClickListener() {

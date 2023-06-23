@@ -35,8 +35,8 @@ public class UnggahViewAdapter extends RecyclerView.Adapter<UnggahViewAdapter.Vi
     public void onBindViewHolder(@NonNull UnggahViewAdapter.ViewHolder holder, int position) {
         int pos = holder.getAdapterPosition();
         Unggah unggah = data.get(pos);
-        holder.itemUnggahBinding.tvUsername.setText(unggah.getUsername());
-        holder.itemUnggahBinding.tvContent.setText(unggah.getContent());
+        holder.itemUnggahBinding.tvUsername.setText(unggah.getContent());
+        holder.itemUnggahBinding.tvContent.setText(unggah.getDeskripsi());
         holder.itemUnggahBinding.tvCreatedDate.setText(unggah.getCreated_date());
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override

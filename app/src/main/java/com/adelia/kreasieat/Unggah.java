@@ -6,6 +6,8 @@ import android.os.Parcelable;
 public class Unggah implements Parcelable {
     private String id;
     private String content;
+
+    private String deskripsi;
     private String user_id;
     private String created_date;
     private String modified_date;
@@ -14,6 +16,7 @@ public class Unggah implements Parcelable {
     protected Unggah(Parcel in) {
         id = in.readString();
         content = in.readString();
+        deskripsi = in.readString();
         user_id = in.readString();
         created_date = in.readString();
         modified_date = in.readString();
@@ -23,6 +26,7 @@ public class Unggah implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(id);
         dest.writeString(content);
+        dest.writeString(deskripsi);
         dest.writeString(user_id);
         dest.writeString(created_date);
         dest.writeString(modified_date);
@@ -92,6 +96,14 @@ public class Unggah implements Parcelable {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getDeskripsi() {
+        return deskripsi;
+    }
+
+    public void setDeskripsi(String deskripsi) {
+        this.deskripsi = deskripsi;
     }
 }
 

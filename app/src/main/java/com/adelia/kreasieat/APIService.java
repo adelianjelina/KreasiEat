@@ -28,12 +28,14 @@ public interface APIService {
     @FormUrlEncoded
     @POST("post")
     Call<ValueNoData> addUnggah(@Field("content") String content,
+                                @Field("deskripsi") String deskripsi,
                                 @Field("user_id") String userId);
 
     @FormUrlEncoded
     @PUT("post")
     Call<ValueNoData> updateUnggah(@Field("id") String id,
-                                   @Field("content") String content);
+                                   @Field("content") String content,
+                                   @Field("deskripsi") String deskripsi);
 
     @DELETE("post/{id}")
     Call<ValueNoData> deleteUnggah(@Path("id") String id);

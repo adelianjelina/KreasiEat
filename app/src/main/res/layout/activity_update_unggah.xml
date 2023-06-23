@@ -28,13 +28,32 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/til_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="180">
+
+            <EditText
+                android:id="@+id/et_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Deskripsi"
+                android:inputType="none"
+                android:maxLength="180"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
         <Button
             android:id="@+id/btn_update"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Update"
             android:layout_alignParentEnd="true"
-            android:layout_below="@id/til_content"
+            android:layout_below="@id/til_deskripsi"
             android:layout_marginTop="16dp"/>
 
         <ProgressBar
